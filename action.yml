@@ -16,5 +16,5 @@ runs:
       shell: bash
     - run: bash upterm.sh
       shell: bash
-      env:
-        UPTERMD_SERVER: ${{ inputs.uptermd-server}}
+      # env:
+      #   UPTERMD_SERVER: ${{ inputs.uptermd-server}}

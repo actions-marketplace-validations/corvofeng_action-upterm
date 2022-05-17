@@ -13,5 +13,5 @@ jobs:
     name: Upterm in ubuntu
     steps:
       - uses: actions/checkout@v3
-      - uses: corvofeng/action-upterm@v5.1
+      - uses: corvofeng/action-upterm@v3.4
 

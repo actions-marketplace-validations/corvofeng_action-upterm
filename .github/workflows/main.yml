@@ -1,12 +1,12 @@
 on: [push]
 
 jobs:
-  macos:
-    runs-on: macos-latest
-    name: Upterm in macos
-    steps:
-      - uses: actions/checkout@v3
-      - uses: corvofeng/action-upterm@v4
+  # macos:
+  #   runs-on: macos-latest
+  #   name: Upterm in macos
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: corvofeng/action-upterm@v4
 
   ubuntu:
     runs-on: ubuntu-latest

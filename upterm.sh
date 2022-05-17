@@ -5,12 +5,12 @@ case "$(uname -s)" in
 
    Darwin)
      echo 'Mac OS X'
-     wget -cO /tmp/upterm https://github.com/corvofeng/upterm/releases/download/${VERSION}/upterm_darwin_amd64
+     wget -qcO /tmp/upterm https://github.com/corvofeng/upterm/releases/download/${VERSION}/upterm_darwin_amd64
      ;;
 
    Linux)
      echo 'Linux'
-     wget -cO /tmp/upterm https://github.com/corvofeng/upterm/releases/download/${VERSION}/upterm_linux_amd64
+     wget -qcO /tmp/upterm https://github.com/corvofeng/upterm/releases/download/${VERSION}/upterm_linux_amd64
      ;;
 
    CYGWIN*|MINGW32*|MSYS*|MINGW*)

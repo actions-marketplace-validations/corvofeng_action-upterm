@@ -1,6 +1,6 @@
 name: 'corvo-upterm'
 description: 'upterm server'
-inputs:
+# inputs:
   # uptermd-server:  # id of input
   #   description: 'uptermd server host'
   #   required: false

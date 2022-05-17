@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - id: foo
-        uses: corvofeng/action-upterm@v3.2
+        uses: corvofeng/action-upterm@v3.3
       #   with:
       #     who-to-greet: 'Mona the Octocat'
       # - run: echo random-number ${{ steps.foo.outputs.random-number }}

@@ -1,14 +1,14 @@
 name: 'corvo-upterm'
 description: 'upterm server'
 inputs:
-  uptermd-server:  # id of input
-    description: 'uptermd server host'
-    required: false
-    default: 'ssh://uptermd.corvo.fun:22'
-  timeout:
-    description: 'upterm will stop after this value, you can use -1 keep alive'
-    required: false
-    default: '600'
+  # uptermd-server:  # id of input
+  #   description: 'uptermd server host'
+  #   required: false
+  #   default: 'ssh://uptermd.corvo.fun:22'
+  # timeout:
+  #   description: 'upterm will stop after this value, you can use -1 keep alive'
+  #   required: false
+  #   default: '600'
 runs:
   using: "composite"
   steps:

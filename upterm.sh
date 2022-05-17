@@ -28,4 +28,5 @@ case "$(uname -s)" in
 esac
 
 chmod +x /tmp/upterm
-/tmp/upterm host --vscode --verify-host-key=false --server $UPTERMD_SERVER bash
+# /tmp/upterm host --vscode --verify-host-key=false --server $UPTERMD_SERVER bash
+/tmp/upterm host --vscode --verify-host-key=false bash

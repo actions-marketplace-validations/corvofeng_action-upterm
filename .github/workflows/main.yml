@@ -14,4 +14,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: corvofeng/action-upterm@v4
+        id: upterm-action
 

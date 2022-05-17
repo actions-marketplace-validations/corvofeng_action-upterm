@@ -8,7 +8,7 @@ inputs:
   timeout:
     description: 'upterm will stop after this value, you can use -1 keep alive'
     required: false
-    default: 600
+    default: '600'
 runs:
   using: "composite"
   steps:

@@ -6,7 +6,8 @@ jobs:
     name: Upterm in macos
     steps:
       - uses: actions/checkout@v3
-      - uses: ./
+      - id: upterm
+        uses: ./
 
   # ubuntu-job:
   #   runs-on: ubuntu-latest

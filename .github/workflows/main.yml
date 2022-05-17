@@ -1,16 +1,17 @@
 on: [push]
 
 jobs:
-  hello_world_job:
-    # runs-on: ubuntu-latest
+  macos:
     runs-on: macos-latest
-    name: A job to say hello
+    name: Upterm in macos
     steps:
       - uses: actions/checkout@v3
+      - uses: corvofeng/action-upterm@v4
 
-      - id: foo
-        uses: corvofeng/action-upterm@v3.4
-      #   with:
-      #     who-to-greet: 'Mona the Octocat'
-      # - run: echo random-number ${{ steps.foo.outputs.random-number }}
-      #   shell: bash
+  ubuntu:
+    runs-on: ubuntu-latest
+    name: Upterm in ubuntu
+    steps:
+      - uses: actions/checkout@v3
+      - uses: corvofeng/action-upterm@v4
+

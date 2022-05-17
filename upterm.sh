@@ -5,12 +5,12 @@ case "$(uname -s)" in
 
    Darwin)
      echo 'Mac OS X'
-     wget -O /tmp/upterm https://github.com/corvofeng/upterm/releases/download/${VERSION}/upterm_darwin_amd64
+     wget -qcO /tmp/upterm https://github.com/corvofeng/upterm/releases/download/${VERSION}/upterm_darwin_amd64
      ;;
 
    Linux)
      echo 'Linux'
-     wget -O /tmp/upterm https://github.com/corvofeng/upterm/releases/download/${VERSION}/upterm_linux_amd64
+     wget -qcO /tmp/upterm https://github.com/corvofeng/upterm/releases/download/${VERSION}/upterm_linux_amd64
      ;;
 
    CYGWIN*|MINGW32*|MSYS*|MINGW*)
@@ -28,5 +28,4 @@ case "$(uname -s)" in
 esac
 
 chmod +x /tmp/upterm
-/tmp/upterm host --vscode --verify-host-key=false bash
-
+/tmp/upterm host --vscode --verify-host-key=false --server $UPTERMD_SERVER bash

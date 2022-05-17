@@ -1,25 +1,18 @@
 name: 'corvo-upterm'
-description: 'Greet someone'
-# inputs:
-#   who-to-greet:  # id of input
-#     description: 'Who to greet'
-#     required: true
-#     default: 'World'
-# outputs:
-#   random-number:
-#     description: "Random number"
-#     value: ${{ steps.random-number-generator.outputs.random-number }}
+description: 'upterm server'
+inputs:
+  uptermd-server:  # id of input
+    description: 'uptermd server host'
+    required: false
+    default: 'ssh://uptermd.corvo.fun:22'
+  timeout:
+    description: 'upterm will stop after this value, you can use -1 keep alive'
+    required: false
+    default: 600
 runs:
   using: "composite"
   steps:
-    # - run: echo Hello ${{ inputs.who-to-greet }}.
-    #   shell: bash
-    # - id: random-number-generator
-    #   run: echo "::set-output name=random-number::$(echo $RANDOM)"
-    #   shell: bash
-    # - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
-    #   shell: bash
-    - run: ls -alh
-      shell: bash
     - run: bash upterm.sh
       shell: bash
+      env:
+        UPTERMD_SERVER: ${{ inputs.uptermd-server}}
